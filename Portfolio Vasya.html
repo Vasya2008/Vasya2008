@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё портфолио</title>
+    <link rel="stylesheet" href="./Portfolio Vasya_files/style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h1>Вася</h1>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/#about">Обо мне</a></li>
+                <li><a href="http://127.0.0.1:5500/#projects">Проекты</a></li>
+                <li><a href="http://127.0.0.1:5500/#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <img src="./Portfolio Vasya_files/aitu-logo.png" alt="AITU Logo" class="aitu-logo">
+
+            <h2>Веб-разработчик</h2>
+
+            <p>
+                Студент Astana IT University.
+                Создаю современные сайты и веб-приложения.
+            </p>
+
+            <a href="http://127.0.0.1:5500/#projects" class="btn">Посмотреть работы</a>
+
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="./Portfolio Vasya_files/Vasya.jpeg" alt="Вася">
+            
+            <div>
+                <h2>Обо мне</h2>
+                <p>
+                    Привет, меня зовут Вася!
+                    Я занимаюсь разработкой сайтов и веб-приложений.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Мои проекты</h2>
+
+        <div class="project-grid">
+            <div class="card">
+                <img src="./Portfolio Vasya_files/Pinduoduologo.png" alt="Интернет-магазин">
+                <h3>Интернет магазин</h3>
+                <p>Адаптивный магазин с корзиной товаров</p>
+            </div>
+
+            <div class="card">
+                <img src="./Portfolio Vasya_files/landing.jpg" alt="Лендинг">
+                <h3>Лендинг</h3>
+                <p>Односторонний сайт для бизнеса</p>
+            </div>
+
+            <div class="card">
+                <img src="./Portfolio Vasya_files/crm.png" alt="CRM System">
+                <h3>CRM-system</h3>
+                <p>Панель управление клиентами и заказами</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <h2>Контакты</h2>
+        <p>Email: v8906803@gmail.com</p>
+        <p>Telegram: @VasyaThai</p>
+        <p>Instagram:
+            <a href="https://www.instagram.com/Vasya_dobri" target="_blank">
+                @Vasya_dobri
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 ВАСЯ. ALL RIGHTS RESERVED</p>
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
